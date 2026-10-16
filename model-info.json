@@ -1,0 +1,105 @@
+{
+  "name": "Q-ReAlign Mini 0.8B \u00b7 aesthetics \u00b7 Q4",
+  "source": "q-future/Q-ReAlign-Mini-0.8B",
+  "revision": "fe1f45a7574c9e9d908875af9f7e90cb946aa19f",
+  "task": "aesthetics",
+  "prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>How would you rate the aesthetics of this image?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nThe aesthetics of the image is",
+  "levels": [
+    "excellent",
+    "good",
+    "fair",
+    "poor",
+    "bad"
+  ],
+  "level_token_ids": [
+    8800,
+    1603,
+    6415,
+    7604,
+    3743
+  ],
+  "scoreMax": 1,
+  "preprocessing": {
+    "width": 256,
+    "height": 256,
+    "mode": "letterbox",
+    "fill": 127,
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "patch_size": 16,
+    "temporal_patch_size": 2,
+    "merge_size": 2
+  },
+  "model_sha256": "4ecdc818bafc887934fbede7368dbd81e0dc754f3887bdcab53e2e4e21b33d9f",
+  "bytes": 506749357,
+  "references": {
+    "black": {
+      "pytorch_score": 0.08301017433404922,
+      "logits": [
+        9.046895980834961,
+        10.548871994018555,
+        12.611518859863281,
+        15.480671882629395,
+        16.344593048095703
+      ],
+      "width": 256,
+      "height": 256,
+      "specialized_score": 0.08301045000553131,
+      "onnx_q4_score": 0.1018487960100174,
+      "delta": 0.01883862167596817
+    },
+    "white": {
+      "pytorch_score": 0.09656225144863129,
+      "logits": [
+        9.13861083984375,
+        10.649391174316406,
+        12.687541961669922,
+        15.384400367736816,
+        16.051326751708984
+      ],
+      "width": 256,
+      "height": 256,
+      "specialized_score": 0.09656254947185516,
+      "onnx_q4_score": 0.11729301512241364,
+      "delta": 0.02073076367378235
+    },
+    "rgb_gradient": {
+      "pytorch_score": 0.2508731484413147,
+      "logits": [
+        9.548482894897461,
+        11.720444679260254,
+        13.717631340026855,
+        15.076730728149414,
+        13.976673126220703
+      ],
+      "width": 256,
+      "height": 256,
+      "specialized_score": 0.2508731484413147,
+      "onnx_q4_score": 0.26912349462509155,
+      "delta": 0.018250346183776855
+    },
+    "texture": {
+      "pytorch_score": 0.33668753504753113,
+      "logits": [
+        10.025237083435059,
+        12.515828132629395,
+        14.352628707885742,
+        14.935500144958496,
+        12.948071479797363
+      ],
+      "width": 256,
+      "height": 256,
+      "specialized_score": 0.33668744564056396,
+      "onnx_q4_score": 0.34807586669921875,
+      "delta": 0.011388331651687622
+    }
+  }
+}
